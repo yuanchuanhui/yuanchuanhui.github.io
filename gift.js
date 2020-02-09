@@ -18,7 +18,7 @@ window.onload = function () {
     let numPoint = 13;
     let step = Math.PI / numPoint;
     //输入间隔
-    let timeInterval = 2000;
+    let timeInterval = 1500;
     //开发者模式，可以决定是否绘制坐标轴等行为
     let dev = false;
     //祝福语句
@@ -144,6 +144,11 @@ function mainLoop(cxt, coordCenterPoint, a, coorCenterPoint, step, timeInterval,
     let i = 0;
     let timer = setInterval(function () {
         new_.innerHTML = blessing.charAt(curIndex);
+        if(i % 2 === 0){
+            new_.style.color = 'red';
+        }else{
+            new_.style.color = 'black';
+        }
         window.curIndex++;
         if (window.theta <= 2 * Math.PI) {
             window.theta += step;
