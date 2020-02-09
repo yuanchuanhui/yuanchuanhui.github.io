@@ -20,7 +20,7 @@ window.onload = function () {
     //输入间隔
     let timeInterval = 2000;
     //开发者模式，可以决定是否绘制坐标轴等行为
-    let dev = true;
+    let dev = false;
     //祝福语句
     let blessing = "Happy_Lover's_Day,_My_Girl";
     window.theta = 0;
